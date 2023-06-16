@@ -1,0 +1,13 @@
+{
+  "name": "discord-bot-starter",
+  "version": "1.0.0",
+  "main": "src/bot.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "npx nodemon src/bot.js",
+    "deploy": "node src/scripts/deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0"
+  }
+}
