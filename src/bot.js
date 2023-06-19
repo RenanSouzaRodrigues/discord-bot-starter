@@ -21,7 +21,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 	const command = interaction.client.commands.get(interaction.commandName);
 
 	if (!command) {
-		await interaction.reply(`não conheço esse comando meu nobre...`);
+		await interaction.reply(`Command unknown`);
 		return;
 	}
 
@@ -30,7 +30,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
 	} catch (error) {
 		console.error(error);
 		await interaction.reply({ 
-            content: 'Se me desculpa mas tive um probleminha pra executar o comando... Pede pro Dallai olhar os logs', 
+            content: 'Error trying to execute command. Error: ' + error.message, 
             ephemeral: true 
         });
 	}

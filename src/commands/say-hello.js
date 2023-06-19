@@ -2,10 +2,10 @@ const { SlashCommandBuilder } = require('discord.js');
 
 const properties = new SlashCommandBuilder()
     .setName('say-hello')
-    .setDescription('Usando esse comando eu subo um servidor para você!');
+    .setDescription('Says hello to you');
 
 const execute = async (interaction) => {
-    await interaction.reply('Hello World!');
+    await interaction.reply('Hello ' + interaction.user.username);
 }
 
 const SayHelloCommand = { properties, execute };
