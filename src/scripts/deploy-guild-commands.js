@@ -11,11 +11,11 @@ const deployCommands = async () => {
     const rest = new REST().setToken(botToken);
 
     try {
-        console.log("Started refreshing application (/) commands.");
+        console.log("Started refreshing application guild (/) commands.");
 
-        await rest.put(Routes.applicationCommands(clientId), { body: commandsJsonBody });
+        await rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commandsJsonBody });
 
-        console.log("Successfully reloaded application (/) commands.");
+        console.log("Successfully reloaded application guild (/) commands.");
     } catch (error) {
         console.error(error);
     }
