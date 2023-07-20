@@ -87,3 +87,8 @@ npm run serve
 or 
 yarn serve
 ```
+
+## More information
+If you need further information about how to expand your bot, please check the <a href="https://discordjs.guide">Discord.js Guide</a> and see everything you can do.
+This is just a template to start your bot and create amazing stuff!
+Have fun!
