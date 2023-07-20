@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "npx nodemon src/bot.js",
-    "deploy": "node src/scripts/deploy-commands.js"
+    "deploy": "node src/scripts/deploy-commands.js",
+    "deploy-server": "node src/scripts/deploy-commands.js"
   },
   "dependencies": {
     "discord.js": "^14.11.0"
